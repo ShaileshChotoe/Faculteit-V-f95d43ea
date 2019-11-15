@@ -20,10 +20,14 @@ function BerekenFaculteit($getal)
 
     echo "\n" . "\n" . "\n";
 
-    for ($j = 1; $j < $getal; $j++)
+    $a = 0;
+
+    while ($a < $getal)
     {
-      $result = $result * ($j + 1);
+      $result = $result * ($a + 1);
+      $a = $a + 1;
     }
+
 
     echo "De faculteit van " . $getal . ' = ' . $result;
 
